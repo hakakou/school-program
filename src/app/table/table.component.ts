@@ -52,7 +52,7 @@ export class TableComponent implements AfterViewInit, OnInit {
     var d = new Date();
 
     // For testing
-    // var d = new Date("2021-02-11 12:29");
+    // var d = new Date("2021-02-11 12:20");
     // console.log(d);
 
     var weekdayClass = ".weekday_" + d.getDay();
