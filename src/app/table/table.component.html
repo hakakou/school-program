@@ -1,0 +1,39 @@
+<div *ngIf="data">
+  <div class="toptable">
+    <h1>
+      {{data.title}}
+    </h1>
+    <img src="https://i.imgur.com/s2VTucG.jpg" class="dial" />
+  </div>
+
+  <div class="table">
+
+    <div class="col">
+      <div class="cell lcol">Ώρα</div>
+      <div *ngFor="let r of data.hours; let i=index" class="cell lcol">
+        {{r.start}} - {{r.stop}}
+      </div>
+    </div>
+
+    <div *ngFor="let day of data.days; let d=index" class="col">
+      <div class="cell trow weekday_{{d+1}}">{{day.day}}</div>
+      <div *ngFor="let r of data.hours; let i=index" class="cell weekday_{{d+1}} time_{{i}}">
+        <a href='https://minedu-primary.webex.com/meet/{{day.boxes[i].link}}' target="webex">
+          <div class="box">
+            <div class="time">{{data.hours[i].start}} - {{data.hours[i].stop}}</div>
+            {{day.boxes[i].text}}
+          </div>
+          <div class="sub">
+            {{name(day.boxes[i].link)}}
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <p>
+    <i>{{data.subtitle}}</i>
+  </p>
+
+</div>

@@ -1,0 +1,94 @@
+{
+    title: "ΠΡΟΓΡΑΜΜΑ Γ1 (ΖΩΗ ΠΕΤΤΑ)",
+    subtitle: "Ισχύει από Τετάρτη 10/2/2021",
+    links: [
+        {
+            name: 'ΖΩΗ ΠΕΤΤΑ (ΔΑΣΚΑΛΑ Γ1)',
+            url: 'zoipetta'
+        },
+        {
+            name: 'ΜΑΛΩΙΝΑ ΛΕΝΑ (ΑΓΓΛΙΚΑ)',
+            url: 'lenamaloina'
+        },
+        {
+            name: 'ΠΕΛΕΚΟΥΔΑ ΞΕΝΙΑ (ΜΟΥΣΙΚΗ)',
+            url: 'polpel'
+        },
+        {
+            name: 'ΚΑΤΟΧΙΑΝΟΣ ΚΩΣΤΑΣ (ΓΥΜΝΑΣΤΙΚΗ)',
+            url: 'kkatochian'
+        },
+        {
+            name: 'ΠΑΠΑΣΠΥΡΟΠΟΥΛΟΥ ΔΙΟΝΥΣΙΑ (ΘΕΑΤΡΙΚΗ ΑΓΩΓΗ)',
+            url: 'dennypap'
+        },
+        {
+            name: 'ΠΑΝΤΕΛΗΣ ΔΙΟΝΥΣΗΣ (ΕΙΚΑΣΤΙΚΑ)',
+            url: 'diopanteli'
+        },
+        {
+            name: 'ΑΡΓΥΡΟΠΟΥΛΟΥ ΙΩΑΝΝΑ (ΥΠΟΛΟΓΙΣΤΕΣ)',
+            url: 'iargyropou'
+        }
+    ],
+    hours: [
+        { start: '08:15', stop: '08:45' },
+        { start: '09:00', stop: '09:30' },
+        { start: '10:00', stop: '10:30' },
+        { start: '10:45', stop: '11:15' },
+        { start: '11:45', stop: '12:15' },
+        { start: '12:30', stop: '13:00' }
+    ],
+    days: [
+        {
+            day: "Δευτέρα", boxes: [
+                { text: 'ΑΓΓΛΙΚΑ', link: 'lenamaloina' },
+                { text: 'ΜΑΘΗΜΑΤΙΚΑ', link: 'zoipetta' },
+                { text: 'ΜΟΥΣΙΚΗ', link: 'polpel' },
+                { text: 'ΙΣΤΟΡΙΑ', link: 'zoipetta' },
+                { text: 'ΜΕΛΕΤΗ', link: 'zoipetta' },
+                { text: 'ΘΡΗΣΚΕΥΤΙΚΑ', link: 'zoipetta' },
+            ]
+        },
+        {
+            day: "Τρίτη", boxes: [
+                { text: 'ΓΛΩΣΣΑ', link: 'zoipetta' },
+                { text: 'ΓΛΩΣΣΑ', link: 'zoipetta' },
+                { text: 'ΜΑΘΗΜΑΤΙΚΑ', link: 'zoipetta' },
+                { text: 'ΓΥΜΝΑΣΤΙΚΗ', link: 'kkatochian' },
+                { text: 'ΘΕΑΤΡΙΚΗ ΑΓΩΓΗ', link: 'dennypap' },
+                { text: 'ΜΕΛΕΤΗ', link: 'zoipetta' },
+            ]
+        },
+        {
+            day: "Τετάρτη", boxes: [
+                { text: 'ΑΓΓΛΙΚΑ', link: 'lenamaloina' },
+                { text: 'ΓΛΩΣΣΑ', link: 'zoipetta' },
+                { text: 'ΓΛΩΣΣΑ', link: 'zoipetta' },
+                { text: 'ΜΑΘΗΜΑΤΙΚΑ', link: 'zoipetta' },
+                { text: 'ΙΣΤΟΡΙΑ', link: 'zoipetta' },
+                { text: 'ΥΠΟΛΟΓΙΣΤΕΣ', link: 'iargyropou' },
+            ]
+        },
+        {
+            day: "Πέμπτη", boxes: [
+                { text: 'ΓΥΜΝΑΣΤΙΚΗ', link: 'kkatochian' },
+                { text: 'ΑΓΓΛΙΚΑ', link: 'lenamaloina' },
+                { text: 'ΓΛΩΣΣΑ', link: 'zoipetta' },
+                { text: 'ΓΛΩΣΣΑ', link: 'zoipetta' },
+                { text: 'ΘΡΗΣΚΕΥΤΙΚΑ', link: 'zoipetta' },
+                { text: 'ΕΥΕΛ. ΖΩΝΗ', link: 'zoipetta' },
+            ]
+        },
+        {
+            day: "Παρασκευή", boxes: [
+                { text: 'ΓΛΩΣΣΑ', link: 'zoipetta' },
+                { text: 'ΓΛΩΣΣΑ', link: 'zoipetta' },
+                { text: 'ΜΑΘΗΜΑΤΙΚΑ', link: 'zoipetta' },
+                { text: 'ΕΙΚΑΣΤΙΚΑ', link: 'diopanteli' },
+                { text: 'ΕΥΕΛ. ΖΩΝΗ', link: 'zoipetta' },
+                { text: 'ΓΥΜΝΑΣΤΙΚΗ', link: 'kkatochian' },
+            ]
+        },
+    ]
+}

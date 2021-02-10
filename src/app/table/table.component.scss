@@ -1,0 +1,101 @@
+// Styling within cells
+.box {
+    font-size: 18px;
+    text-decoration: underline;
+}
+// Styling within cells
+.sub {
+    font-size: 11px;
+}
+
+// Div with time in each cell... will show only on mobile
+.time {
+    display: none;
+}
+
+.toptable {
+    display: flex; 
+    align-items: center;
+    flex-direction: row;
+}
+
+.table {
+    max-width: 1200px;
+    display: flex;
+    border: 1px solid gray;
+    flex-direction: row; // This changes to column in mobile.
+    background-color: #dddddda0;
+}
+
+// Each column. Contents are from top to bottom. So set flex-direction: column.
+.col {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+// top row styling and left col. The lcol items will be hidden in mobile as their
+// content is duplicated.
+.trow,
+.lcol {
+    background-color: rgb(73, 73, 73);
+    color: white;
+    font-size: 20px;
+}
+
+// normal cell
+.cell {
+    border: 1px solid gray;
+    height: 60px;
+    padding: 8px;
+    text-align: center;
+    a {
+        text-decoration: none;
+        color: darkblue;
+    }
+}
+
+.cell.ready {
+    animation: readyAnimation 1s infinite;
+    font-weight: bold;
+}
+.cell.exec {
+    background-color: lightgreen;
+    font-weight: bold;
+}
+.cell.done {
+    background-color: burlywood;
+}
+
+@keyframes readyAnimation {
+    0%,
+    49% {
+        background-color: yellow;
+    }
+    50%,
+    100% {
+        background-color: initial;
+    }
+}
+
+.dial {
+    visibility: hidden;
+    margin-left: 50px;
+    height: 70px;
+}
+.show {
+    visibility: visible !important;
+}
+
+@media (max-width: 900px) {
+    .table, .toptable {
+        flex-direction: column;
+    }
+    .time {
+        display: block;
+    }
+    .lcol {
+        display: none;
+    }
+}
